@@ -11,3 +11,18 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+PATH="$HOME/bin:$PATH"
+
+export LSCOLORS="exfxcxdxbxegedabagacad"
+
+# Aliases
+if [ -f ~/.dotfiles/aliases.bash ]; then
+  source ~/.dotfiles/aliases.bash
+fi
+
+# Functions
+if [ -f ~/.dotfiles/functions.bash ]; then
+  source ~/.dotfiles/functions.bash
+fi
