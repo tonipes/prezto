@@ -20,6 +20,7 @@ fi
 export EDITOR='nano'
 export VISUAL='atom'
 export PAGER='less'
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 #
 # Language
